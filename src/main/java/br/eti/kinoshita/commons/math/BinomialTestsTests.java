@@ -13,6 +13,12 @@ public class BinomialTestsTests {
                 AlternativeHypothesis.TWO_SIDED);
         // not supposed to be above 1, as p-values are between (incl) 0 and 1
         System.out.println(d);
+        // another lib
+        d = (new org.hipparchus.stat.inference.BinomialTest()).binomialTest(numberOfTrials, numberOfSuccesses, probability,
+                org.hipparchus.stat.inference.AlternativeHypothesis.TWO_SIDED);
+        // not supposed to be above 1, as p-values are between (incl) 0 and 1
+        System.out.println(d);
+        
     }
 
 }
