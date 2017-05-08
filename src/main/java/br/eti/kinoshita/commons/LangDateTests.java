@@ -9,7 +9,7 @@ import com.ibm.icu.text.DateFormat;
 import com.ibm.icu.text.SimpleDateFormat;
 import com.ibm.icu.util.ULocale;
 
-import sun.util.resources.LocaleData;
+//import sun.util.resources.LocaleData;
 
 
 @SuppressWarnings("restriction")
@@ -17,10 +17,10 @@ public class LangDateTests {
 
     public static void main(String[] args) {
         // Oracle JDK
-        Locale locale = Locale.forLanguageTag("pt-PT");
-        ResourceBundle resource = LocaleData.getDateFormatData(locale);
-        String[] shortWeekdays = resource.getStringArray("DayAbbreviations");
-        System.out.println(Arrays.asList(shortWeekdays));
+//        Locale locale = Locale.forLanguageTag("pt-PT");
+//        ResourceBundle resource = LocaleData.getDateFormatData(locale);
+//        String[] shortWeekdays = resource.getStringArray("DayAbbreviations");
+//        System.out.println(Arrays.asList(shortWeekdays));
 
         // Android + ICU
         ULocale loc = new ULocale("pt_PT");
