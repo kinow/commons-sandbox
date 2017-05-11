@@ -1,0 +1,61 @@
+Compiled from "JavaTest.java"
+public class br.eti.kinoshita.commons.JavaTest {
+  public java.lang.Object o;
+
+  public br.eti.kinoshita.commons.JavaTest();
+    Code:
+       0: aload_0
+       1: invokespecial #10                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public int test();
+    Code:
+       0: iconst_1
+       1: ireturn
+}
+
+
+---
+
+Compiled from "JavaTest.java"
+public class br.eti.kinoshita.commons.JavaTest {
+  public java.lang.Object o;
+
+  public br.eti.kinoshita.commons.JavaTest();
+    Code:
+       0: aload_0
+       1: invokespecial #10                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public int test();
+    Code:
+       0: aload_0
+       1: getfield      #18                 // Field o:Ljava/lang/Object;
+       4: ifnonnull     11
+       7: aconst_null
+       8: goto          15
+      11: iconst_1
+      12: invokestatic  #20                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      15: invokevirtual #26                 // Method java/lang/Integer.intValue:()I
+      18: ireturn
+}
+
+---
+
+Compiled from "JavaTest.java"
+public class br.eti.kinoshita.commons.JavaTest {
+  public java.lang.Integer o;
+
+  public br.eti.kinoshita.commons.JavaTest();
+    Code:
+       0: aload_0
+       1: invokespecial #10                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public int test();
+    Code:
+       0: aload_0
+       1: getfield      #18                 // Field o:Ljava/lang/Integer;
+       4: invokevirtual #20                 // Method java/lang/Integer.intValue:()I
+       7: ireturn
+}
