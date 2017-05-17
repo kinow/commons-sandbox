@@ -19,6 +19,7 @@ public class BCEL_289 {
         ClassParser cp = new ClassParser("/home/kinow/Development/java/apache/tests-for-commons/target/classes/br/eti/kinoshita/commons/bcel/Test$Inner.class");
         ClassGen cg = new ClassGen(cp.parse());
         MethodGen mg = new MethodGen(cg.getMethodAt(0), cg.getClassName(), cg.getConstantPool());
+        // here..args.
         mg.getAnnotationsOnParameter(0);
         System.out.println("OK!");
     }
