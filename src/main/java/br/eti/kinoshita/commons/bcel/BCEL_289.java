@@ -20,7 +20,7 @@ public class BCEL_289 {
         ClassGen cg = new ClassGen(cp.parse());
         MethodGen mg = new MethodGen(cg.getMethodAt(0), cg.getClassName(), cg.getConstantPool());
         // here..args.
-        mg.getAnnotationsOnParameter(0);
+        System.out.println(mg.getAnnotationsOnParameter(0));
         System.out.println("OK!");
     }
 
