@@ -8,5 +8,6 @@ public class Java8 {
         IntStream.rangeClosed(1, 8).forEach((i) -> {
             System.out.println(String.format("hello %d", i));
         });
+        System.out.println(new String("") instanceof Object);
     }
 }
